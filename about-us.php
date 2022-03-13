@@ -34,10 +34,8 @@ include('includes/config.php');
 
 <?php 
 $pagetype='aboutus';
-$query=mysqli_query($con,"select PageTitle,Description from table_pages where PageName='$pagetype'");
-while($row=mysqli_fetch_array($query))
-{
-
+$query=mysqli_query($con,"select PageTitle, Description from table_pages where PageName='$pagetype'");
+while($row=mysqli_fetch_array($query)){
 ?>
       <h1 class="mt-4 mb-3"><?php echo htmlentities($row['PageTitle'])?>
   
@@ -69,7 +67,8 @@ while($row=mysqli_fetch_array($query))
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   </body>
 
