@@ -18,7 +18,7 @@
         if($sql){
             echo '<script> alert("Succsess to register new account portal himatektro website"); window.location.href="./index.php"; </script>';
         } else {
-            echo '<script> alert("Failed to register account, please try again"); window.location.href="./signup.php"; </script>';
+            echo '<script> alert("Failed to register account, please try again"); window.location.href="./signup-portal.php"; </script>';
         } 
 
     }
