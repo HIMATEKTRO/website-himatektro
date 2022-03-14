@@ -39,8 +39,15 @@ endif;
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    
+    <!-- Blog Post -->
+<?php
+$pid=intval($_GET['nid']);
+ $query=mysqli_query($con,"select table_posts.PostTitle as posttitle, table_posts.PostImage, table_category.CategoryName as category, table_category.id as cid, table_subcategory.Subcategory as subcategory, table_posts.PostDetails as postdetails, table_posts.PostingDate as postingdate, table_posts.PostUrl as url from table_posts left join table_category on table_category.id=table_posts.CategoryId left join table_subcategory on table_subcategory.SubCategoryId=table_posts.SubCategoryId where table_posts.id='$pid'");
+while ($row=mysqli_fetch_array($query)) {
+?>
 
-    <title>HIMATEKTRO | Home Page</title>
+    <title> <?php echo htmlentities($row['posttitle']); ?> | HIMPUNAN MAHASISWA TEKNIK ELEKTRO | UNIVERSITAS SYIAH KUALA </title>
 
     <!-- JavaScript FontAwesome -->
     <script src="https://kit.fontawesome.com/ad0d081d8e.js" crossorigin="anonymous"></script>
@@ -67,13 +74,6 @@ endif;
 
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-
-          <!-- Blog Post -->
-<?php
-$pid=intval($_GET['nid']);
- $query=mysqli_query($con,"select table_posts.PostTitle as posttitle, table_posts.PostImage, table_category.CategoryName as category, table_category.id as cid, table_subcategory.Subcategory as subcategory, table_posts.PostDetails as postdetails, table_posts.PostingDate as postingdate, table_posts.PostUrl as url from table_posts left join table_category on table_category.id=table_posts.CategoryId left join table_subcategory on table_subcategory.SubCategoryId=table_posts.SubCategoryId where table_posts.id='$pid'");
-while ($row=mysqli_fetch_array($query)) {
-?>
 
           <div class="card mb-4">
       
