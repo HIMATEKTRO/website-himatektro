@@ -67,11 +67,11 @@ while ($row=mysqli_fetch_array($query)) {
             <div class="card-body">
               <h2 class="card-title"><?php echo htmlentities($row['posttitle']);?></h2>
                  <p><b>Category : </b> <a href="category.php?catid=<?php echo htmlentities($row['cid'])?>"><?php echo htmlentities($row['category']);?></a> </p>
-       
+                 <p><?php $pt=$row['postdetails']; echo  (substr($pt, 0, 110));?> ...</p>
               <a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>" class="btn btn-primary">Read More &rarr;</a>
             </div>
             
-            <img class="card-img-top" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?>" style="width:500px; height:500px; margin-left:30px; margin-bottom:30px;">
+            <img class="card-img-top" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?>" style="max-width:500px; height:500px; margin:auto; margin-bottom:30px;">
             
             <div class="card-footer text-muted">
               Posted on <?php echo htmlentities($row['postingdate']);?>
