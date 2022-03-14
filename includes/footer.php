@@ -17,6 +17,11 @@
         <a class="btn btn-outline-light btn-floating m-2" href="https://www.instagram.com/himatektro_usk" target="_blank" role="button"
           ><i class="fab fa-instagram"></i
         ></a>
+          
+        <!-- Telegram -->
+        <a class="btn btn-outline-light btn-floating m-2" href="https://t.me/HimatektroUSK" target="_blank" role="button"
+          ><i class="fab fa-telegram-plane"></i
+        ></a>
       </section>
       <!-- Section: Social media -->
      
