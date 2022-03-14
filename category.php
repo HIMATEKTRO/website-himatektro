@@ -17,6 +17,9 @@ include('includes/config.php');
 
     <title> Category  Page | HIMPUNAN MAHASISWA TEKNIK ELEKTRO | UNIVERSITAS SYIAH KUALA </title>
 
+    <!-- JavaScript FontAwesome -->
+    <script src="https://kit.fontawesome.com/ad0d081d8e.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -129,8 +132,7 @@ while ($row=mysqli_fetch_array($query)) {
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
 
  
 </head>
