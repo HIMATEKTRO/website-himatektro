@@ -4,7 +4,7 @@
       <!-- Section: Social media -->
       <section class="m-2">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-2" href="https://facebook.com/himatektro.unsyiah" target="_blank" role="button"
+        <a class="btn btn-outline-light btn-floating m-2" href="https://facebook.com/Himatektro.USK" target="_blank" role="button"
           ><i class="fab fa-facebook-f"></i
         ></a>
 
