@@ -12,7 +12,7 @@ include('includes/config.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HIMATEKTRO | About us</title>
+    <title> About us | HIMPUNAN MAHASISWA TEKNIK ELEKTRO | UNIVERSITAS SYIAH KUALA </title>
 
     <!-- JavaScript FontAwesome -->
     <script src="https://kit.fontawesome.com/ad0d081d8e.js" crossorigin="anonymous"></script>
