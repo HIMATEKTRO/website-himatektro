@@ -1,6 +1,6 @@
 <?php 
 session_start();
-error_reporting(0);
+//error_reporting(0);
 include('includes/config.php');
 
     ?>
@@ -17,6 +17,9 @@ include('includes/config.php');
 
     <title> Search Page "<?php echo $_POST['searchtitle'];?>" | HIMPUNAN MAHASISWA TEKNIK ELEKTRO | UNIVERSITAS SYIAH KUALA </title>
 
+    <!-- JavaScript FontAwesome -->
+    <script src="https://kit.fontawesome.com/ad0d081d8e.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -29,6 +32,7 @@ include('includes/config.php');
 
     <!-- Navigation -->
    <?php include('includes/header.php');?>
+   <br />
 
     <!-- Page Content -->
     <div class="container">
@@ -111,14 +115,12 @@ while ($row=mysqli_fetch_array($query)) {
       
 
           <!-- Pagination -->
-
-
-
+          
 
         </div>
 
         <!-- Sidebar Widgets Column -->
-      <?php include('includes/sidebar.php');?>
+      <?php include('./includes/sidebar.php');?>
       </div>
       <!-- /.row -->
 
@@ -126,15 +128,13 @@ while ($row=mysqli_fetch_array($query)) {
     <!-- /.container -->
 
     <!-- Footer -->
-      <?php include('includes/footer.php');?>
+      <?php include('./includes/footer.php');?>
 
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
- 
-</head>
   </body>
 
 </html>
