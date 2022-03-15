@@ -75,7 +75,7 @@ while ($row=mysqli_fetch_array($query)) {
 
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-
+        <br /><br />
           <div class="card mb-4">
       
             <div class="card-body">
@@ -104,7 +104,6 @@ $pt=$row['postdetails'];
      
 
         </div>
-
         <!-- Sidebar Widgets Column -->
       <?php include('includes/sidebar.php');?>
       </div>
@@ -163,6 +162,8 @@ $pt=$row['postdetails'];
 
   
       <?php include('includes/footer.php');?>
+      
+      
 
 
     <!-- Bootstrap core JavaScript -->
