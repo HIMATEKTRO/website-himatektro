@@ -26,6 +26,7 @@ include('includes/config.php');
 
     <!-- Navigation -->
     <?php include('includes/header.php');?>
+    <br />
     <!-- Page Content -->
     <div class="container">
 
