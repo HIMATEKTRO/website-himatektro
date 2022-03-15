@@ -64,6 +64,7 @@ while ($row=mysqli_fetch_array($query)) {
 
     <!-- Navigation -->
    <?php include('includes/header.php');?>
+   <br />
 
     <!-- Page Content -->
     <div class="container">
@@ -83,7 +84,7 @@ while ($row=mysqli_fetch_array($query)) {
                 <b>Sub Category : </b><?php echo htmlentities($row['subcategory']);?> <b> Posted on </b><?php echo htmlentities($row['postingdate']);?></p>
                 <hr />
 
- <img class="img-fluid rounded" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?>">
+ <img class="img-fluid rounded" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?> " style="max-width: auto; height: auto; margin-bottom: 30px;">
   
               <p class="card-text"><?php 
 $pt=$row['postdetails'];
