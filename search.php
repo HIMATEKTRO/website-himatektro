@@ -90,7 +90,7 @@ while ($row=mysqli_fetch_array($query)) {
               
               <p><?php $pt=$row['postdetails']; echo  (substr($pt, 0, 110));?> ...</p>
               
-              <a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>" class="btn btn-primary">Read More &rarr;</a>
+              <a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>&page=<?php echo htmlentities($row['url'])?>" class="btn btn-primary">Read More &rarr;</a>
             </div>
             <div class="card-footer text-muted">
               Posted on <?php echo htmlentities($row['postingdate']);?>
