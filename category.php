@@ -16,7 +16,7 @@ include('includes/config.php');
     <meta name="author" content="">
 
     <title> Category  Page | HIMPUNAN MAHASISWA TEKNIK ELEKTRO | UNIVERSITAS SYIAH KUALA </title>
-
+    
     <!-- JavaScript FontAwesome -->
     <script src="https://kit.fontawesome.com/ad0d081d8e.js" crossorigin="anonymous"></script>
 
@@ -29,15 +29,14 @@ include('includes/config.php');
   </head>
 
   <body>
+      
+      <!-- Navigation -->
+      <?php include('includes/header.php');?>
+      <br />
+   
+      <!-- Page Content -->
+      <div class="container">
 
-    <!-- Navigation -->
-   <?php include('includes/header.php');?>
-
-    <!-- Page Content -->
-    <div class="container">
-
-
-     
       <div class="row" style="margin-top: 4%">
 
         <!-- Blog Entries Column -->
@@ -82,6 +81,7 @@ while ($row=mysqli_fetch_array($query)) {
 
 
 ?>
+<br />
 <h1><?php echo htmlentities($row['category']);?> News</h1>
           <div class="card mb-4">
             <div class="card-body">
@@ -130,8 +130,9 @@ while ($row=mysqli_fetch_array($query)) {
     <!-- Footer -->
       <?php include('includes/footer.php');?>
 
-
     <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     
 
  
