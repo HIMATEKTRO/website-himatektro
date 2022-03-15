@@ -1,7 +1,7 @@
 <?php 
 session_start();
 include('includes/config.php');
-//error_reporting(0);
+error_reporting(0);
 //Genrating CSRF Token
 if (empty($_SESSION['token'])) {
  $_SESSION['token'] = bin2hex(random_bytes(32));
@@ -45,8 +45,10 @@ endif;
 <?php
 $pid=intval($_GET['nid']);
 $pages=$_GET['page'];
- $query=mysqli_query($con,"select table_posts.PostTitle as posttitle, table_posts.PostImage, table_category.CategoryName as category, table_category.id as cid, table_subcategory.Subcategory as subcategory, table_posts.PostDetails as postdetails, table_posts.PostingDate as postingdate, table_posts.PostUrl as url from table_posts left join table_category on table_category.id=table_posts.CategoryId left join table_subcategory on table_subcategory.SubCategoryId=table_posts.SubCategoryId where table_posts.id='$pid' or table_posts.PostUrl='$pages'");
+ $query=mysqli_query($con,"select table_posts.PostTitle as posttitle, table_posts.PostImage, table_category.CategoryName as category, table_category.id as cid, table_subcategory.Subcategory as subcategory, table_posts.PostDetails as postdetails, table_posts.PostingDate as postingdate, table_posts.PostUrl as url from table_posts left join table_category on table_category.id=table_posts.CategoryId left join table_subcategory on table_subcategory.SubCategoryId=table_posts.SubCategoryId where table_posts.id='$pid' and table_posts.PostUrl='$pages'");
+if($pid == true and $pages == true){
 while ($row=mysqli_fetch_array($query)) {
+
 ?>
 
     <title> <?php echo htmlentities($row['posttitle']); ?> | HIMPUNAN MAHASISWA TEKNIK ELEKTRO | UNIVERSITAS SYIAH KUALA </title>
@@ -98,7 +100,10 @@ $pt=$row['postdetails'];
            
             </div>
           </div>
-<?php } ?>
+<?php }
+    } else { 
+        echo "<script type='text/javascript'> document.location = '404page.php'; </script>";
+    } ?>
        
 
       
@@ -175,3 +180,4 @@ $pt=$row['postdetails'];
   </body>
 
 </html>
+    
