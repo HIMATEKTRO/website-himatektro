@@ -113,6 +113,7 @@ $pt=$row['postdetails'];
 
  <div class="row" style="margin-top: -8%">
    <div class="col-md-8">
+       <br /> <br /><br />
 <div class="card my-4">
             <h5 class="card-header">Leave a Comment:</h5>
             <div class="card-body">
@@ -134,25 +135,28 @@ $pt=$row['postdetails'];
               </form>
             </div>
           </div>
-
-  <!---Comment Display Section --->
-
- <?php 
- $sts=1;
- $query=mysqli_query($con,"select name,comment,postingDate from  table_comments where postId='$pid' and status='$sts'");
-while ($row=mysqli_fetch_array($query)) {
-?>
-<div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="images/usericon.png" alt="">
-            <div class="media-body">
-              <h5 class="mt-0"><?php echo htmlentities($row['name']);?> <br />
-                  <span style="font-size:11px;"><b>at</b> <?php echo htmlentities($row['postingDate']);?></span>
-            </h5>
-           
-             <?php echo htmlentities($row['comment']);?>            </div>
-          </div>
-<?php } ?>
-
+          <div class="card my-4">
+              <h5 class="card-header"></h5>
+                  <div class="card-body">
+                      <!---Comment Display Section --->
+                     <?php 
+                     $sts=1;
+                     $query=mysqli_query($con,"select name,comment,postingDate from  table_comments where postId='$pid' and status='$sts'");
+                    while ($row=mysqli_fetch_array($query)) {
+                    ?>
+                    <div class="media mb-4">
+                                <img class="d-flex mr-3 rounded-circle" src="images/usericon.png" alt="">
+                                <div class="media-body">
+                                  <h5 class="mt-0"><?php echo htmlentities($row['name']);?> <br />
+                                      <span style="font-size:11px;"><b>at</b> <?php echo htmlentities($row['postingDate']);?></span>
+                                </h5>
+                               
+                                 <?php echo htmlentities($row['comment']);?>            </div>
+                              </div>
+                    <?php } ?>
+                      
+                  </div>
+       </div>
         </div>
       </div>
     </div>
