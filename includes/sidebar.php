@@ -1,6 +1,7 @@
   <div class="col-md-4">
+      <br /><br />
           <!-- Categories Widget -->
-          <div class="card my-1">
+          <div class="card my-4">
             <h5 class="card-header">Categories</h5>
             <div class="card-body">
               <div class="row">
