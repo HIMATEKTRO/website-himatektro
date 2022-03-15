@@ -74,7 +74,10 @@ $query=mysqli_query($con,"select table_posts.id as pid, table_posts.PostTitle as
 $rowcount=mysqli_num_rows($query);
 if($rowcount==0)
 {
-echo "No record found";
+    ?>
+    <br /><br />
+    <h5 style="text-align: center; margin-top: auto;">No pages found</h5>
+    <?php
 }
 else {
 while ($row=mysqli_fetch_array($query)) {
@@ -82,8 +85,8 @@ while ($row=mysqli_fetch_array($query)) {
 
 ?>
 <br />
-<h1><?php echo htmlentities($row['category']);?> News</h1>
           <div class="card mb-4">
+              <h1 class="card-header"><?php echo htmlentities($row['category']);?> News</h1>
             <div class="card-body">
               <h2 class="card-title"><?php echo htmlentities($row['posttitle']);?></h2>
               <p><?php $pt=$row['postdetails']; echo  (substr($pt, 0, 110));?> ...</p>
@@ -118,7 +121,6 @@ while ($row=mysqli_fetch_array($query)) {
 
 
         </div>
-
         <!-- Sidebar Widgets Column -->
       <?php include('includes/sidebar.php');?>
       </div>
@@ -136,7 +138,8 @@ while ($row=mysqli_fetch_array($query)) {
     
 
  
-</head>
+<!--
   </body>
 
 </html>
+-->
