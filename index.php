@@ -34,7 +34,6 @@ include('includes/config.php');
 
     <!-- Page Content -->
     <div class="container">
-        <br />
 
 
      
@@ -42,6 +41,7 @@ include('includes/config.php');
 
         <!-- Blog Entries Column -->
         <div class="col-md-8">
+        <br /><br />
 
           <!-- Blog Post -->
 <?php 
