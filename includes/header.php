@@ -12,6 +12,19 @@
           <a class="nav-link text-white" href="departemen.php">DEPARTEMEN</a>
           <a class="nav-link text-white" href="#">DOKUMEN</a>
           <a class="nav-link text-white" href="#">PROFIL</a>
+          
+        </div>
+        <br />
+        <div style=" margin-left:auto;">
+            <!-- Search Widget -->
+          <form name="search" action="search.php" method="post">
+              <div class="input-group">
+                  <input type="text" name="searchtitle" class="form-control" placeholder="Search for..." required>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="submit">Go!</button>
+                    </span>
+                </div>
+            </form>
         </div>
       </div>
     </div>
