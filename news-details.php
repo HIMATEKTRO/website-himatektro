@@ -43,7 +43,8 @@ endif;
     <!-- Blog Post -->
 <?php
 $pid=intval($_GET['nid']);
- $query=mysqli_query($con,"select table_posts.PostTitle as posttitle, table_posts.PostImage, table_category.CategoryName as category, table_category.id as cid, table_subcategory.Subcategory as subcategory, table_posts.PostDetails as postdetails, table_posts.PostingDate as postingdate, table_posts.PostUrl as url from table_posts left join table_category on table_category.id=table_posts.CategoryId left join table_subcategory on table_subcategory.SubCategoryId=table_posts.SubCategoryId where table_posts.id='$pid'");
+$pages=$_GET['page'];
+ $query=mysqli_query($con,"select table_posts.PostTitle as posttitle, table_posts.PostImage, table_category.CategoryName as category, table_category.id as cid, table_subcategory.Subcategory as subcategory, table_posts.PostDetails as postdetails, table_posts.PostingDate as postingdate, table_posts.PostUrl as url from table_posts left join table_category on table_category.id=table_posts.CategoryId left join table_subcategory on table_subcategory.SubCategoryId=table_posts.SubCategoryId where table_posts.id='$pid' or table_posts.PostUrl='$pages'");
 while ($row=mysqli_fetch_array($query)) {
 ?>
 
@@ -170,6 +171,9 @@ $pt=$row['postdetails'];
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     
+    <!--
   </body>
 
 </html>
+-->
+    
