@@ -1,6 +1,7 @@
 <?php 
 session_start();
 include('includes/config.php');
+//error_reporting(0);
 //Genrating CSRF Token
 if (empty($_SESSION['token'])) {
  $_SESSION['token'] = bin2hex(random_bytes(32));
@@ -171,9 +172,6 @@ $pt=$row['postdetails'];
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     
-    <!--
   </body>
 
 </html>
--->
-    
