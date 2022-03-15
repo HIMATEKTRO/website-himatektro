@@ -90,7 +90,7 @@ while ($row=mysqli_fetch_array($query)) {
             <div class="card-body">
               <h2 class="card-title"><?php echo htmlentities($row['posttitle']);?></h2>
               <p><?php $pt=$row['postdetails']; echo  (substr($pt, 0, 110));?> ...</p>
-              <a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>" class="btn btn-primary">Read More &rarr;</a>
+              <a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>&page=<?php echo htmlentities($row['url'])?>" class="btn btn-primary">Read More &rarr;</a>
             </div>
             <img class="card-img-top" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?>" style="max-width:auto; height:auto; margin:auto; margin-bottom:auto;">
             <div class="card-footer text-muted">
@@ -136,10 +136,6 @@ while ($row=mysqli_fetch_array($query)) {
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     
-
- 
-<!--
   </body>
 
 </html>
--->
