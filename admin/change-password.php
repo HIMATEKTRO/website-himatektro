@@ -28,7 +28,7 @@ if($num>0)
 
 if (password_verify($password, $dbpassword)) {
 
-$con=mysqli_query($con,"update table_admin set AdminPassword='$newhashedpass', updationDate='$currentTime' where AdminUserName='$adminid'");
+$con=mysqli_query($con,"update table_admin set AdminPassword='$newhashedpass', UpdationDate='$currentTime' where AdminUserName='$adminid' || AdminEmailId='$adminid'");
 $msg="Password Changed Successfully !!";
 }
 }
