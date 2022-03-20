@@ -21,7 +21,7 @@
               <li><a class="dropdown-item" href="#">PENDIDIKAN DAN PENGEMBANGAN SUMBER DAYA MAHASISWA</a></li>
               <li><a class="dropdown-item" href="#">KEROHANIAN</a></li>
               <li><a class="dropdown-item" href="#">KESEJAHTERAAN MAHASISWA</a></li>
-              <li><a class="dropdown-item" href="#">HUMAS</li>
+              <li><a class="dropdown-item" href="#">HUMAS</a></li>
               <li><a class="dropdown-item" href="#">Bidang F</a></li>
             </ul>
           </li>
