@@ -15,6 +15,9 @@ include('includes/config.php');
     <meta name="author" content="">
 
     <title> Home Page | HIMPUNAN MAHASISWA TEKNIK ELEKTRO | UNIVERSITAS SYIAH KUALA </title>
+    
+    <!-- Set favicon icon in head-->
+    <link rel="shortcut icon" type="image/png" href="./himatektro-icon.png">
 
     <!-- JavaScript FontAwesome -->
     <script src="https://kit.fontawesome.com/ad0d081d8e.js" crossorigin="anonymous"></script>
@@ -29,94 +32,93 @@ include('includes/config.php');
 
   <body>
 
-    <!-- Navigation -->
-   <?php include('includes/header.php');?>
+     <!-- Navigation -->
+    <?php include('includes/header.php');?>
 
-    <!-- Page Content -->
-    <div class="container">
+    <!-- Page Content container-->
+    <div class="container pb-4">
 
-
-     
-      <div class="row" style="margin-top: 4%">
-
-        <!-- Blog Entries Column -->
-        <div class="col-md-8">
-        <br /><br />
-
-          <!-- Blog Post -->
-<?php 
-     if (isset($_GET['pageno'])) {
-            $pageno = $_GET['pageno'];
-        } else {
-            $pageno = 1;
-        }
-        $no_of_records_per_page = 8;
-        $offset = ($pageno-1) * $no_of_records_per_page;
-
-
-        $total_pages_sql = "SELECT COUNT(*) FROM table_posts";
-        $result = mysqli_query($con,$total_pages_sql);
-        $total_rows = mysqli_fetch_array($result)[0];
-        $total_pages = ceil($total_rows / $no_of_records_per_page);
-
-
-$query=mysqli_query($con,"select table_posts.id as pid, table_posts.PostTitle as posttitle, table_posts.PostImage, table_category.CategoryName as category, table_category.id as cid, table_subcategory.Subcategory as subcategory, table_posts.PostDetails as postdetails, table_posts.PostingDate as postingdate, table_posts.PostUrl as url from table_posts left join table_category on table_category.id=table_posts.CategoryId left join table_subcategory on table_subcategory.SubCategoryId=table_posts.SubCategoryId where table_posts.Is_Active=1 order by table_posts.id desc LIMIT $offset, $no_of_records_per_page");
-while ($row=mysqli_fetch_array($query)) {
-?>
-
-          <div class="card mb-4">
-            <div class="card-body">
-              <h2 class="card-title"><?php echo htmlentities($row['posttitle']);?></h2>
-                 <p><b>Category : </b> <a href="category.php?catid=<?php echo htmlentities($row['cid'])?>page=<?php echo htmlentities($row['url'])?>"><?php echo htmlentities($row['category']);?></a> </p>
-                 <p><?php $pt=$row['postdetails']; echo  (substr($pt, 0, 110));?> ...</p>
-              <a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>&page=<?php echo htmlentities($row['url'])?>" class="btn btn-primary">Read More &rarr;</a>
-            </div>
-            
-            <img class="card-img-top" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?>" style="max-width:500px; height:auto; margin:auto; margin-bottom:30px;">
-            
-            <div class="card-footer text-muted">
-              Posted on <?php echo htmlentities($row['postingdate']);?>
-           
-            </div>
-            
-          </div>
-<?php } ?>
-       
-
-      
-
-          <!-- Pagination -->
-
-
-    <ul class="pagination justify-content-center mb-4">
-        <li class="page-item"><a href="?pageno=1"  class="page-link">First</a></li>
-        <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?> page-item">
-            <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>" class="page-link">Prev</a>
-        </li>
-        <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?> page-item">
-            <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?> " class="page-link">Next</a>
-        </li>
-        <li class="page-item"><a href="?pageno=<?php echo $total_pages; ?>" class="page-link">Last</a></li>
-    </ul>
-
+      <!-- START IMAGE SILDER-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-
-        <!-- Sidebar Widgets Column -->
-      <?php include('includes/sidebar.php');?>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/sld1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/sld2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/sld3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <!-- /.row -->
+      <!-- END IMAGE SILDER-->
+
+      <!-- Welcome text -->
+      <p class="text-center fw-bolder fs-4 pt-5">SELAMAT DATANG DI WEBSITE HIMPUNAN MAHASISWA TEKNIK ELEKTRO</p>
+
+
+      <!-- START VISI DAN MISI CARD -->
+      <div class="row" style="margin-top: 4%">
+        <!-- Blog Entries Column -->
+        <div class="col-md-12">
+            <br /><br />
+          <!-- Blog Post -->
+          <div class="card mb-4">
+              
+            <h5 class="card-header text-center">VISI dan MISI</h5>
+            <div class="card-body">
+              <h5 class="card-title">VISI :</h5>
+              <p class="card-text">Terwujudnya Himpunan Mahasiswa Teknik Elektro sebagai tempat berkarya bagi seluruh mahasiswa untuk memiliki karakter Progresivitas, Kompetitif, dan Aktualis.</p>
+              <h5 class="card-title">MISI :</h5>
+              <p class="card-text">1. Peningkatkan koordinasi dan kualitas kerjasama BEM dengan seluruh organisasi</p>
+              <p class="card-text">2. Peningkatan mutu pengabdian masyarakat terorganisir</p>
+              <p class="card-text">3. Fasilitas pengembangan mutu minat bakat, keilmuan, dan karakter mahasiswa pada tingkat Universitas, Regional, Nasional, dan Internasional</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END VISI DAN MISI CARD -->
 
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-      <?php include('includes/footer.php');?>
+    <?php include('includes/footer.php');?>
 
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     
+    <!--
   </body>
 
 </html>
+-->
+ 
