@@ -16,13 +16,15 @@
               DEPARTEMEN
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">MINAT DAN BAKAT</a></li>
-              <li><a class="dropdown-item" href="#">KESEKRETARIATAN TEKNIK ELEKTRO</a></li>
-              <li><a class="dropdown-item" href="#">PENDIDIKAN DAN PENGEMBANGAN SUMBER DAYA MAHASISWA</a></li>
-              <li><a class="dropdown-item" href="#">KEROHANIAN</a></li>
-              <li><a class="dropdown-item" href="#">KESEJAHTERAAN MAHASISWA</a></li>
-              <li><a class="dropdown-item" href="#">HUMAS</a></li>
-              <li><a class="dropdown-item" href="#">Bidang F</a></li>
+              <li><a class="dropdown-item" href="#">Pendidikan Sumber Daya Mahasiswa</a></li>
+              <li><a class="dropdown-item" href="#">Kesejahteraan Mahasiswa</a></li>
+              <li><a class="dropdown-item" href="#">Kerohanian</a></li>
+              <li><a class="dropdown-item" href="#">Informasi dan Komunikasi</a></li>
+              <li><a class="dropdown-item" href="#">Penelitian dan Pengembangan</a></li>
+              <li><a class="dropdown-item" href="#">Kesekretariatan</a></li>
+              <li><a class="dropdown-item" href="#">Ekonomi Kreatif</a></li>
+              <li><a class="dropdown-item" href="#">Minat dan Bakat</a></li>
+              <li><a class="dropdown-item" href="#">Hubungan Masyarakat</a></li>
             </ul>
           </li>
           <li class="nav-item">
