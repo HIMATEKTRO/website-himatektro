@@ -22,6 +22,11 @@
         <a class="btn btn-outline-light btn-floating m-2" href="https://t.me/HimatektroUSK" target="_blank" role="button"
           ><i class="fab fa-telegram-plane"></i
         ></a>
+        
+        <!-- Line -->
+        <a class="btn btn-outline-light btn-floating m-2" href="https://line.me/ti/p/@sai1248b" target="_blank" role="button"
+          ><i class="fab fa-line"></i
+        ></a>
       </section>
       <!-- Section: Social media -->
      
