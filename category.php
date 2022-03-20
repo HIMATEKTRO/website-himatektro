@@ -17,6 +17,9 @@ include('includes/config.php');
 
     <title> Category  Page | HIMPUNAN MAHASISWA TEKNIK ELEKTRO | UNIVERSITAS SYIAH KUALA </title>
     
+    <!-- Set favicon icon in head-->
+    <link rel="shortcut icon" type="image/png" href="./himatektro-icon.png">
+    
     <!-- JavaScript FontAwesome -->
     <script src="https://kit.fontawesome.com/ad0d081d8e.js" crossorigin="anonymous"></script>
 
@@ -32,15 +35,15 @@ include('includes/config.php');
       
       <!-- Navigation -->
       <?php include('includes/header.php');?>
-      <br />
    
       <!-- Page Content -->
       <div class="container">
-
+          
       <div class="row" style="margin-top: 4%">
 
         <!-- Blog Entries Column -->
         <div class="col-md-8">
+            <br />
 
           <!-- Blog Post -->
 <?php 
@@ -136,6 +139,10 @@ while ($row=mysqli_fetch_array($query)) {
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     
+
+ 
+<!--
   </body>
 
 </html>
+-->
