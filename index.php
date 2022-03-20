@@ -35,10 +35,10 @@ include('includes/config.php');
      <!-- Navigation -->
     <?php include('includes/header.php');?>
 
-    <!-- Page Content container-->
-    <div class="container pb-4">
+    <!-- Page Content-->
 
-      <!-- START IMAGE SILDER-->
+    <!-- START IMAGE SILDER-->
+    <div class="container p-4">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators ">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,20 +77,18 @@ include('includes/config.php');
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- END IMAGE SILDER-->
+    </div>
+    <!-- END IMAGE SILDER-->
 
+    <div class="container p-4">
       <!-- Welcome text -->
-      <p class="text-center fw-bolder fs-4 pt-5">SELAMAT DATANG DI WEBSITE HIMPUNAN MAHASISWA TEKNIK ELEKTRO</p>
-
-
+      <p class="text-center fw-bolder fs-4">SELAMAT DATANG DI WEBSITE HIMPUNAN MAHASISWA TEKNIK ELEKTRO</p>
       <!-- START VISI DAN MISI CARD -->
       <div class="row" style="margin-top: 4%">
         <!-- Blog Entries Column -->
         <div class="col-md-12">
-            <br /><br />
           <!-- Blog Post -->
-          <div class="card mb-4">
-              
+          <div class="card p-3 mb-4">
             <h5 class="card-header text-center">VISI dan MISI</h5>
             <div class="card-body">
               <h5 class="card-title">VISI :</h5>
@@ -104,9 +102,38 @@ include('includes/config.php');
         </div>
       </div>
       <!-- END VISI DAN MISI CARD -->
-
     </div>
-    <!-- /.container -->
+
+    <!-- OTHER WEBSITE LINK -->
+    <div class="container p-4">
+      <div class="d-flex align-items-center p-4">
+        <a class="link-warning" href="https://elektro.unsyiah.ac.id/"><img src="images/UskLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail me-4">Program Studi Teknik Elektro Universitas Syiah Kuala</a>
+      </div>
+      <div class="d-flex align-items-center p-4">
+        <a class="link-warning" href="https://ikatektro.org/"><img src="images/IkatektroLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail me-4">Ikatan Alumni Teknik Elektro Universitas Syiah Kuala</a>
+      </div>
+      <!-- KROENG
+      <div class="d-flex align-items-center p-4">
+        <a class="link-warning" href="#"><img src="images/IkatektroLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail me-4">KROENG</a>
+      </div>
+      -->
+    </div>
+
+    <!-- Adress -->
+    <div class="container p-4">
+      <div class="shadow embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d992.7490038330377!2d95.36880162922857!3d5.567604234525771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304037f8a4d365a5%3A0x726f948b6c71096c!2sSEKRETARIAT%20HIMATEKTRO%20FT%20USK!5e0!3m2!1sen!2sid!4v1647761497770!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="d-flex align-items-center p-4">
+        <img src="images/HimatektroLogo.png" alt="" width="156" height="156">
+        <p class="ps-4">Address:
+        <br>Jln. Meureubo No.A9, Kopelma Darussalam, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 24415
+        <br>Email: himatektro.ft@unsyiah.ac.id</p>
+      </div>
+    </div>
+
+    
+    <!-- /.Content -->
 
     <!-- Footer -->
     <?php include('includes/footer.php');?>
