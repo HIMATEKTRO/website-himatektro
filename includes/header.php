@@ -8,7 +8,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active text-white" aria-current="page" href="about-us.php">About Us</a>
+          <a class="nav-link active text-white" aria-current="page" href="berita.php">BERITA</a>
           <a class="nav-link text-white" href="departemen.php">DEPARTEMEN</a>
           <a class="nav-link text-white" href="#">DOKUMEN</a>
           <a class="nav-link text-white" href="#">PROFIL</a>
