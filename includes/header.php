@@ -1,6 +1,6 @@
 <div class="header pb-5">
   <nav class="navbar navbar-expand-md navbar-light bg-dark bg-opacity-80 fixed-top">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" aria-current="page" href="index.php">
         <img src="images/LogoHimatektro.png" alt="" width="156" height="54" class="d-inline-block"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
