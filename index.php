@@ -47,21 +47,21 @@ include('includes/config.php');
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/sld1.jpg" class="d-block w-100" alt="...">
+            <img src="images/slide1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/sld2.jpg" class="d-block w-100" alt="...">
+            <img src="images/slide2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/sld3.jpg" class="d-block w-100" alt="...">
+            <img src="images/slide3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
@@ -107,14 +107,17 @@ include('includes/config.php');
     <!-- OTHER WEBSITE LINK -->
     <div class="container p-4">
       <div class="d-flex align-items-center p-4">
-        <a class="link-warning" href="https://elektro.unsyiah.ac.id/"><img src="images/UskLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail me-4">Program Studi Teknik Elektro Universitas Syiah Kuala</a>
+        <a href="https://elektro.unsyiah.ac.id/"><img src="images/UskLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail"></a>
+        <a class="link-warning ps-4" href="#">Program Studi Teknik Elektro Universitas Syiah Kuala</a>
       </div>
       <div class="d-flex align-items-center p-4">
-        <a class="link-warning" href="https://ikatektro.org/"><img src="images/IkatektroLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail me-4">Ikatan Alumni Teknik Elektro Universitas Syiah Kuala</a>
+        <a href="https://ikatektro.org/"><img src="images/IkatektroLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail"></a>
+        <a class="link-warning ps-4" href="#">Ikatan Alumni Teknik Elektro Universitas Syiah Kuala</a>
       </div>
       <!-- KROENG
       <div class="d-flex align-items-center p-4">
-        <a class="link-warning" href="#"><img src="images/IkatektroLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail me-4">KROENG</a>
+        <a href="#"><img src="images/IkatektroLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail"></a>
+        <a class="link-warning ps-4" href="#">KROENG</a>
       </div>
       -->
     </div>
@@ -124,9 +127,10 @@ include('includes/config.php');
       <div class="shadow embed-responsive embed-responsive-16by9">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d992.7490038330377!2d95.36880162922857!3d5.567604234525771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304037f8a4d365a5%3A0x726f948b6c71096c!2sSEKRETARIAT%20HIMATEKTRO%20FT%20USK!5e0!3m2!1sen!2sid!4v1647761497770!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      <div class="d-flex align-items-center p-4">
-        <img src="images/HimatektroLogo.png" alt="" width="156" height="156">
-        <p class="ps-4">Address:
+      
+      <div class="d-lg-flex align-items-center p-4">
+        <img src="images/HimatektroLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail me-4">
+        <p class="lead">Address:
         <br>Jln. Meureubo No.A9, Kopelma Darussalam, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 24415
         <br>Email: himatektro.ft@unsyiah.ac.id</p>
       </div>
