@@ -28,3 +28,8 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* remove the gap so it doesn't close */
+}
