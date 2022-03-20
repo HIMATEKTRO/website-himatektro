@@ -16,8 +16,13 @@ $name=$_POST['name'];
 $email=$_POST['email'];
 $comment=$_POST['comment'];
 $postid=intval($_GET['nid']);
+
+// Set Time Local
+date_default_timezone_set('Asia/Jakarta');// change according timezone
+$currentTime = date("Y-m-d G:i:s");
+
 $st1='0';
-$query=mysqli_query($con,"insert into table_comments(postId,name,email,comment,status) values('$postid','$name','$email','$comment','$st1')");
+$query=mysqli_query($con,"insert into table_comments(postId,name,email,comment,status, PostingDate) values('$postid','$name','$email','$comment','$st1','$currentTime')");
 if($query):
   echo "<script>alert('comment successfully submit. Comment will be display after admin review ');</script>";
   unset($_SESSION['token']);
@@ -52,6 +57,9 @@ while ($row=mysqli_fetch_array($query)) {
 ?>
 
     <title> <?php echo htmlentities($row['posttitle']); ?> | HIMPUNAN MAHASISWA TEKNIK ELEKTRO | UNIVERSITAS SYIAH KUALA </title>
+    
+    <!-- Set favicon icon in head-->
+    <link rel="shortcut icon" type="image/png" href="./himatektro-icon.png">
 
     <!-- JavaScript FontAwesome -->
     <script src="https://kit.fontawesome.com/ad0d081d8e.js" crossorigin="anonymous"></script>
@@ -84,8 +92,8 @@ while ($row=mysqli_fetch_array($query)) {
       
             <div class="card-body">
               <h2 class="card-title"><?php echo htmlentities($row['posttitle']);?></h2>
-              <p><b>Category : </b> <a href="category.php?catid=<?php echo htmlentities($row['cid'])?>"><?php echo htmlentities($row['category']);?></a> |
-                <b>Sub Category : </b><?php echo htmlentities($row['subcategory']);?> <b> Posted on </b><?php echo htmlentities($row['postingdate']);?></p>
+              <p><b>Bidang : </b> <a href="category.php?catid=<?php echo htmlentities($row['cid'])?>"><?php echo htmlentities($row['category']);?></a> |
+                <b>Category : </b><?php echo htmlentities($row['subcategory']);?> <b> Posted on </b><?php echo htmlentities($row['postingdate']);?></p>
                 <hr />
 
  <img class="img-fluid rounded" src="admin/postimages/<?php echo htmlentities($row['PostImage']);?>" alt="<?php echo htmlentities($row['posttitle']);?> " style="max-width: auto; height: auto; margin-bottom: 30px;">
@@ -177,7 +185,9 @@ $pt=$row['postdetails'];
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     
+    <!--
   </body>
 
 </html>
+-->
     
