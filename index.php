@@ -88,7 +88,7 @@ include('includes/config.php');
         <!-- Blog Entries Column -->
         <div class="col-md-12">
           <!-- Blog Post -->
-          <div class="card p-3 mb-4">
+          <div class="shadow card p-3 mb-4">
             <h5 class="card-header text-center">VISI dan MISI</h5>
             <div class="card-body">
               <h5 class="card-title">VISI :</h5>
