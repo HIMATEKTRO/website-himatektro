@@ -2,7 +2,7 @@
       <br />
           <!-- Categories Widget -->
           <div class="card my-4">
-            <h5 class="card-header">Categories</h5>
+            <h5 class="card-header">Bidang</h5>
             <div class="card-body">
               <div class="row">
                 <div class="col-lg-6">
@@ -25,7 +25,7 @@ while($row=mysqli_fetch_array($query))
 
           <!-- Side Widget -->
           <div class="card my-4">
-            <h5 class="card-header">Recent News</h5>
+            <h5 class="card-header">Berita Lainnya</h5>
             <div class="card-body">
                       <ul class="mb-0">
 <?php
