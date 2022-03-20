@@ -34,7 +34,7 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-start p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-start text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2022 Copyright:
       <a class="text-white" href="#">HIMATEKTRO</a>
     </div>
