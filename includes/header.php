@@ -27,8 +27,14 @@
               <li><a class="dropdown-item" href="#">Hubungan Masyarakat</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">DOKUMEN</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              DOKUMEN
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Bank Soal</a></li>
+              <li><a class="dropdown-item" href="#">Kalender Himpunan</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#">PROFIL</a>
