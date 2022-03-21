@@ -108,11 +108,11 @@ include('includes/config.php');
     <div class="container p-4">
       <div class="d-flex align-items-center p-4">
         <a href="https://elektro.unsyiah.ac.id/"><img src="images/UskLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail"></a>
-        <a class="link-warning ps-4" href="#">Program Studi Teknik Elektro Universitas Syiah Kuala</a>
+        <a class="link-warning ps-4" href="https://elektro.unsyiah.ac.id/">Program Studi Teknik Elektro Universitas Syiah Kuala</a>
       </div>
       <div class="d-flex align-items-center p-4">
         <a href="https://ikatektro.org/"><img src="images/IkatektroLogo.png" alt="" width="96" height="96" class="shadow rounded-circle img-thumbnail"></a>
-        <a class="link-warning ps-4" href="#">Ikatan Alumni Teknik Elektro Universitas Syiah Kuala</a>
+        <a class="link-warning ps-4" href="https://ikatektro.org/">Ikatan Alumni Teknik Elektro Universitas Syiah Kuala</a>
       </div>
       <!-- KROENG
       <div class="d-flex align-items-center p-4">
