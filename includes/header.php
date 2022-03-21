@@ -36,9 +36,22 @@
               <li><a class="dropdown-item" href="#">Kalender Himpunan</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">PROFIL</a>
+          
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PROFIL
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
+              <li><a class="dropdown-item" href="#">Prestasi</a></li>
+              <li><a class="dropdown-item" href="#">Sejarah</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">CONTACT US</a>
+          </li>
+          
         </ul>
         <form class="d-flex" action="search.php" method="post">
           <input class="form-control me-2" type="search" name="searchtitle" placeholder="Search" aria-label="Search">
